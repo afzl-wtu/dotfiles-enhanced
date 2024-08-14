@@ -1,3 +1,14 @@
+# Dotfiles-ENHNCED
+is a forked repo for enhancing its functionality including tailscale, wireguard vpn and fish. Internet speed is shown on Waybar directly. Some other arrangments are done on waybar. Moreover Rofi and Terminal are very difficult to open on orignal repo with shortcut keys. So some adjustments are made on short keys too. Also some bugs in orignal repo are fixed and done other enahnncements.
+
+Make sure you already have installed orignal ML4W apps and files.
+Simply clone this repo and run activate.sh in terminal. Give inner dotfiles path with repect to current user home directory,i.e,
+```
+dotfiles-enhanced/dotfiles  // not as /home/??/dotfiles-enhanced/dotfiles or ~/dotfiles-enhanced/dotfiles
+```
+Below is MD file and wiki from Orignal Repo:
+
+
 # ML4W Dotfiles for Hyprland
 
 An advanced configuration of Hyprland for Arch Linux based distributions. This package includes an installation script to install and setup the required components.
@@ -26,7 +37,7 @@ You can find the complete documentation of the ML4W Dotfiles in the Wiki. <b>[Op
 
 ## Contributing
 
-Thanks for using the ML4W Dotfiles on your system. If you find a problem or a bug, please [report your issue on this page](https://github.com/mylinuxforwork/dotfiles/issues).
+Thanks for using the ML4W Dotfiles on your system. If you find a problem or a bug, please [report your issue on this page](https://github.com/afzl-wtu/dotfiles-enhanced/issues).
 
 You can also visit the [ML4W Discord Server](https://discord.gg/c4fJK7Za3g) to start a discussion with other users.
 

@@ -10,7 +10,8 @@
 //
 {
     // General Settings
-    "layer": "top",
+    "position": "top",
+    "margin-top": 0,
     "margin-bottom": 0,
     "layer": "top",
     "margin-left": 0,
@@ -23,51 +24,21 @@
         "~/.config/waybar/modules.json"
     ],
 
-    // Updates Count
-    "custom/updates": {
-        "format": "   {}",
-        "escape": true,
-        "return-type": "json",
-        "exec": "~/.config/ml4w/scripts/updates.sh",
-        "restart-interval": 60,
-        "on-click": "$(cat ~/.config/ml4w/settings/terminal.sh) --class dotfiles-floating -e ~/.config/ml4w/scripts/installupdates.sh",
-        "on-click-right": "~/.config/ml4w/settings/software.sh"
-    },
-
-    // Pulseaudio
-    "pulseaudio": {
-        // "scroll-step": 1, // %, can be a float
-        "format": "{icon}   {volume}%",
-        "format-bluetooth": "{volume}% {icon} {format_source}",
-        "format-bluetooth-muted": " {icon} {format_source}",
-        "format-muted": " {format_source}",
-        "format-source": "{volume}% ",
-        "format-source-muted": "",
-        "format-icons": {
-        "headphone": " ",
-        "hands-free": " ",
-        "headset": " ",
-        "phone": " ",
-        "portable": " ",
-        "car": " ",
-        "default": [" ", " ", " "]
-        },
-        "on-click": "pavucontrol"
-    },
-
     // Modules Left
     "modules-left": [
-        "custom/appmenuicon",
-        "hyprland/workspaces",
-        "group/links",
+        "custom/appmenu",
         "group/settings",
-        "group/quicklinks"
+        "group/quicklinks",
+        "group/links",
+        //"wlr/taskbar",
+        "network"
+        // "hyprland/window",
+        // "custom/empty"
     ],
 
     // Modules Center
     "modules-center": [
-        "hyprland/window",
-        "custom/empty"
+        "hyprland/workspaces"
     ],
 
     // Modules Right    
@@ -77,12 +48,11 @@
         "backlight",
         "bluetooth",
         "battery", 
-        "network",
-        "group/hardware",
+        // "group/hardware",
         "group/tools",
-        "custom/exit",
-        "clock",
         "tray",
-        "custom/ml4w-welcome"
+        "custom/exit",
+        "custom/ml4w-welcome",
+        "clock"
     ]
 }
